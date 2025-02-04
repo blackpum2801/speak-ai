@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:speak_ai/features/home/screens/home_screen.dart';
 import 'package:speak_ai/features/splash/splash.dart';
 
 void main() {
@@ -13,22 +14,11 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       initialRoute: '/',
+      debugShowCheckedModeBanner: false,
       routes: {
         '/': (context) => const SplashScreen(),
         '/home': (context) => const HomeScreen(),
       },
-    );
-  }
-}
-
-class HomeScreen extends StatelessWidget {
-  const HomeScreen({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: const Text('Home')),
-      body: const Center(child: Text('Home Screen')),
     );
   }
 }
