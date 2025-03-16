@@ -6,6 +6,7 @@ class CustomText extends StatelessWidget {
   final FontWeight fontWeight;
   final Color color;
   final String fontFamily;
+  final int? maxLines;
 
   const CustomText({
     Key? key,
@@ -13,6 +14,7 @@ class CustomText extends StatelessWidget {
     this.fontSize = 14.0,
     this.fontWeight = FontWeight.normal,
     this.color = Colors.black,
+    this.maxLines,
     this.fontFamily = 'Roboto',
   }) : super(key: key);
 

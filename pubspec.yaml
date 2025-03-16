@@ -13,6 +13,7 @@ dependencies:
   cupertino_icons: ^1.0.8
   animated_splash_screen: ^1.3.0
   flutter_svg: ^2.0.17
+  dots_indicator: ^4.0.1
 
 dev_dependencies:
   flutter_test:
@@ -27,11 +28,17 @@ flutter:
     - assets/images/conversation1.jpg
     - assets/images/conversation2.jpg
     - assets/images/conversation3.jpg
+    - assets/images/lesson.jpg
+    - assets/images/topic.jpg
+    - assets/images/hanhtinh1.svg
     # Icons
     - assets/icons/list-homework.svg
     - assets/icons/certificate.svg
     - assets/icons/waveform.svg
     - assets/icons/message.svg
+    # Logos
+    - assets/logos/ielts-logo.svg
+    - assets/logos/elsa-logo.svg
 
   fonts:
     - family: OpenSans

@@ -10,4 +10,17 @@ class AppColors {
   static const Color tagEasy = Color(0xFF38b000);
   static const Color tagMedium = Color(0xFFF77F00);
   static const Color tagHard = Color(0xFFdc2f02);
+
+  static final List<Color> courseCardColors = [
+    const Color(0xFFFF6B6B), // Vibrant Red
+    const Color(0xFF4ECDC4), // Teal
+    const Color(0xFF45B7D1), // Blue
+    const Color(0xFFF7D794), // Soft Yellow
+    const Color(0xFF9B59B6), // Purple
+  ];
+
+  // Get color for course card based on index
+  static Color getCourseCardColor(int index) {
+    return courseCardColors[index % courseCardColors.length];
+  }
 }

@@ -26,7 +26,7 @@ class CardTitle extends StatelessWidget {
           title: CustomText(
             text: title,
             fontSize: 18,
-            fontFamily: 'Open Sans',
+            fontFamily: 'OpenSans',
             fontWeight: FontWeight.w600,
           ),
           trailing: ElevatedButton(

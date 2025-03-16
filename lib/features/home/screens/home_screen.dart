@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:speak_ai/features/expect/screens/page_three_screen%20copy.dart';
-import 'package:speak_ai/features/learn/screens/page_two_screen%20copy%202.dart';
+import 'package:speak_ai/features/learn/screens/page_two_screen.dart';
 import 'page_one_screen.dart';
 import '../../profile/screens/page_four_screen.dart';
 

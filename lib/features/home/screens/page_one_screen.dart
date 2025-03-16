@@ -59,7 +59,7 @@ class PageOneScreen extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Padding(
-              padding: const EdgeInsets.only(left: 8),
+              padding: const EdgeInsets.only(left: 12),
               child: Card(
                 elevation: 8,
                 child: Column(
@@ -78,7 +78,7 @@ class PageOneScreen extends StatelessWidget {
                       child: CustomText(
                         text: "Có 3 Cuộc ĐÀM THOẠI",
                         fontSize: 16,
-                        fontFamily: 'Open Sans',
+                        fontFamily: 'OpenSans',
                       ),
                     ),
                     SizedBox(
@@ -112,16 +112,16 @@ class PageOneScreen extends StatelessWidget {
             ),
             const SizedBox(height: 20),
             const Padding(
-              padding: EdgeInsets.symmetric(horizontal: 8.0),
+              padding: EdgeInsets.symmetric(horizontal: 12),
               child: CustomText(
                 text: "Hôm nay, chúng ta nên làm gì?",
-                fontFamily: 'Open Sans',
+                fontFamily: 'OpenSans',
                 fontSize: 25,
                 fontWeight: FontWeight.w700,
               ),
             ),
             const Padding(
-              padding: EdgeInsets.symmetric(horizontal: 8.0),
+              padding: EdgeInsets.symmetric(horizontal: 12),
               child: CardTitle(
                 iconPath: AppIcons.listHomeWorkIcon,
                 title: "Luyện tập Bài học Hàng ngày",
@@ -129,7 +129,7 @@ class PageOneScreen extends StatelessWidget {
             ),
             const SizedBox(height: 6),
             const Padding(
-              padding: EdgeInsets.symmetric(horizontal: 8.0),
+              padding: EdgeInsets.symmetric(horizontal: 12),
               child: CardTitle(
                 iconPath: AppIcons.waveformIcon,
                 title: "Cải thiện Phát âm",
@@ -137,7 +137,7 @@ class PageOneScreen extends StatelessWidget {
             ),
             const SizedBox(height: 6),
             const Padding(
-              padding: EdgeInsets.symmetric(horizontal: 8.0),
+              padding: EdgeInsets.symmetric(horizontal: 12),
               child: CardTitle(
                 iconPath: AppIcons.messageIcon,
                 title: "Học theo Chủ đề",
@@ -145,7 +145,7 @@ class PageOneScreen extends StatelessWidget {
             ),
             const SizedBox(height: 6),
             const Padding(
-              padding: EdgeInsets.symmetric(horizontal: 8.0),
+              padding: EdgeInsets.symmetric(horizontal: 12),
               child: CardTitle(
                 iconPath: AppIcons.certificateIcon,
                 title: "Nhận được Chứng chỉ",
