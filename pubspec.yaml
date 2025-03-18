@@ -36,6 +36,17 @@ flutter:
     - assets/icons/certificate.svg
     - assets/icons/waveform.svg
     - assets/icons/message.svg
+    - assets/icons/ai-bot.png
+    - assets/icons/scrabble.png
+    - assets/icons/crossword.png
+    - assets/icons/mic.png
+    - assets/icons/voice.svg
+    - assets/icons/todolist.svg
+    - assets/icons/dictionary.svg
+    - assets/icons/filter.svg
+    - assets/icons/coach-ai.svg
+    - assets/icons/community.svg
+    - assets/icons/news.svg
     # Logos
     - assets/logos/ielts-logo.svg
     - assets/logos/elsa-logo.svg
