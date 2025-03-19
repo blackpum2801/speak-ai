@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
+import 'package:speak_ai/util/assets.dart';
+import 'package:speak_ai/util/colors.dart';
 
 class BottomNavigationWidget extends StatelessWidget {
   final int currentIndex;
@@ -13,29 +16,52 @@ class BottomNavigationWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BottomNavigationBar(
+      backgroundColor: AppColors.navigation,
+      selectedItemColor: Colors.white,
+      unselectedItemColor: Colors.white,
       currentIndex: currentIndex,
       onTap: onTap,
       type: BottomNavigationBarType.fixed,
-      items: const [
-        BottomNavigationBarItem(
+      showSelectedLabels: true,
+      showUnselectedLabels: false,
+      selectedLabelStyle: const TextStyle(
+        fontFamily: 'OpenSans',
+        fontSize: 14,
+        color: Colors.white,
+      ),
+      unselectedLabelStyle: const TextStyle(
+        fontFamily: 'OpenSans',
+        fontSize: 14,
+        color: Colors.white,
+      ),
+      items: [
+        const BottomNavigationBarItem(
           icon: Icon(Icons.home),
           label: 'Trang chủ',
         ),
         BottomNavigationBarItem(
-          icon: Icon(Icons.search),
+          icon: SvgPicture.asset(
+            AppAssets.book,
+            width: 24,
+            height: 24,
+            colorFilter: const ColorFilter.mode(Colors.white, BlendMode.srcIn),
+          ),
           label: 'Học',
         ),
         BottomNavigationBarItem(
-          icon: Icon(Icons.notifications),
-          label: 'Phát hiện',
+          icon: SvgPicture.asset(
+            AppAssets.discover,
+            width: 24,
+            height: 24,
+            colorFilter: const ColorFilter.mode(Colors.white, BlendMode.srcIn),
+          ),
+          label: 'Khám phá',
         ),
-        BottomNavigationBarItem(
+        const BottomNavigationBarItem(
           icon: Icon(Icons.person),
           label: 'Hồ sơ',
         ),
       ],
-      selectedLabelStyle: const TextStyle(fontFamily: 'OpenSans'),
-      unselectedLabelStyle: const TextStyle(fontFamily: 'OpenSans'),
     );
   }
 }

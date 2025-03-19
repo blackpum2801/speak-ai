@@ -47,6 +47,8 @@ flutter:
     - assets/icons/coach-ai.svg
     - assets/icons/community.svg
     - assets/icons/news.svg
+    - assets/icons/book.svg
+    - assets/icons/discover.svg
     # Logos
     - assets/logos/ielts-logo.svg
     - assets/logos/elsa-logo.svg

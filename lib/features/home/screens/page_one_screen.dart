@@ -36,18 +36,24 @@ class PageOneScreen extends StatelessWidget {
     ];
 
     return Scaffold(
+      backgroundColor: AppColors.background,
       appBar: AppBar(
+        backgroundColor: AppColors.background,
         title: const Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             CustomText(
-              text: 'Chào mừng bạn trở lại',
-              fontSize: 14,
+              text: 'Chào mừng bạn đã trở lại',
+              fontSize: 15,
+              color: Colors.white,
+              fontFamily: 'OpenSans',
               fontWeight: FontWeight.w700,
             ),
             CustomText(
               text: 'Nguyễn Văn A',
-              fontSize: 16,
+              fontSize: 18,
+              color: Colors.white,
+              fontFamily: 'OpenSans',
               fontWeight: FontWeight.w700,
             ),
           ],
@@ -61,6 +67,7 @@ class PageOneScreen extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.only(left: 12),
               child: Card(
+                color: AppColors.secondBackground,
                 elevation: 8,
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -70,6 +77,7 @@ class PageOneScreen extends StatelessWidget {
                       child: CustomText(
                         text: 'SPEAK FLOW AI Conversations',
                         fontSize: 22,
+                        color: Colors.white,
                         fontWeight: FontWeight.w700,
                       ),
                     ),
@@ -78,6 +86,7 @@ class PageOneScreen extends StatelessWidget {
                       child: CustomText(
                         text: "Có 3 Cuộc ĐÀM THOẠI",
                         fontSize: 16,
+                        color: Colors.yellowAccent,
                         fontFamily: 'OpenSans',
                       ),
                     ),
@@ -112,46 +121,48 @@ class PageOneScreen extends StatelessWidget {
             ),
             const SizedBox(height: 20),
             const Padding(
-              padding: EdgeInsets.symmetric(horizontal: 12),
-              child: CustomText(
-                text: "Hôm nay, chúng ta nên làm gì?",
-                fontFamily: 'OpenSans',
-                fontSize: 25,
-                fontWeight: FontWeight.w700,
+              padding: EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  CustomText(
+                    text: "Hôm nay, chúng ta nên làm gì?",
+                    fontFamily: 'OpenSans',
+                    fontSize: 25,
+                    color: Colors.white,
+                    fontWeight: FontWeight.w700,
+                  ),
+                  SizedBox(height: 6),
+                  CardTitle(
+                    iconPath: AppIcons.listHomeWorkIcon,
+                    title: "Luyện tập Bài học Hàng ngày",
+                    iconColor: Color(0xFFfee159),
+                    backgroundElevator: Color(0xFFfee159),
+                  ),
+                  SizedBox(height: 6),
+                  CardTitle(
+                    iconPath: AppIcons.waveformIcon,
+                    title: "Cải thiện Phát âm",
+                    iconColor: Color(0xFF4fcdff),
+                    backgroundElevator: Color(0xFF4fcdff),
+                  ),
+                  SizedBox(height: 6),
+                  CardTitle(
+                    iconPath: AppIcons.messageIcon,
+                    title: "Học theo Chủ đề",
+                    iconColor: Color(0xFFff5eff),
+                    backgroundElevator: Color(0xFFff5eff),
+                  ),
+                  SizedBox(height: 6),
+                  CardTitle(
+                    iconPath: AppIcons.certificateIcon,
+                    title: "Nhận được Chứng chỉ",
+                    iconColor: Color(0xFFff5e45),
+                    backgroundElevator: Color(0xFFff5e45),
+                  ),
+                ],
               ),
-            ),
-            const Padding(
-              padding: EdgeInsets.symmetric(horizontal: 12),
-              child: CardTitle(
-                iconPath: AppIcons.listHomeWorkIcon,
-                title: "Luyện tập Bài học Hàng ngày",
-              ),
-            ),
-            const SizedBox(height: 6),
-            const Padding(
-              padding: EdgeInsets.symmetric(horizontal: 12),
-              child: CardTitle(
-                iconPath: AppIcons.waveformIcon,
-                title: "Cải thiện Phát âm",
-              ),
-            ),
-            const SizedBox(height: 6),
-            const Padding(
-              padding: EdgeInsets.symmetric(horizontal: 12),
-              child: CardTitle(
-                iconPath: AppIcons.messageIcon,
-                title: "Học theo Chủ đề",
-              ),
-            ),
-            const SizedBox(height: 6),
-            const Padding(
-              padding: EdgeInsets.symmetric(horizontal: 12),
-              child: CardTitle(
-                iconPath: AppIcons.certificateIcon,
-                title: "Nhận được Chứng chỉ",
-              ),
-            ),
-            const SizedBox(height: 6),
+            )
           ],
         ),
       ),

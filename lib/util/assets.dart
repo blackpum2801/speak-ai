@@ -22,4 +22,6 @@ class AppAssets {
   static const String coachAi = 'assets/icons/coach-ai.svg';
   static const String community = 'assets/icons/community.svg';
   static const String news = 'assets/icons/news.svg';
+  static const String book = 'assets/icons/book.svg';
+  static const String discover = 'assets/icons/discover.svg';
 }
