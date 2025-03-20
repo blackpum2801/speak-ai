@@ -17,7 +17,13 @@ class PageTwoScreen extends StatefulWidget {
 
 class _PageTwoScreenState extends State<PageTwoScreen> {
   int _currentPage = 0;
-  final PageController _pageController = PageController(viewportFraction: 0.85);
+  late PageController _pageController;
+  @override
+  void initState() {
+    super.initState();
+    _pageController = PageController(viewportFraction: 0.85);
+  }
+
   final List<Map<String, String>> categories = [
     {
       'title': 'Bài học',
@@ -182,7 +188,7 @@ class _PageTwoScreenState extends State<PageTwoScreen> {
                   const SizedBox(height: 10),
                   CustomCard(
                     onTap: () {
-                      print("Clicked Tiếng Anh");
+                      debugPrint("Clicked Tiếng Anh");
                     },
                     svgPath: AppAssets.hanhtinh1,
                     title: 'Tiếng Anh',
@@ -202,7 +208,7 @@ class _PageTwoScreenState extends State<PageTwoScreen> {
                       const Spacer(),
                       InkWell(
                         onTap: () {
-                          print("Clicked Xem tất cả");
+                          debugPrint("Clicked Xem tất cả");
                         },
                         child: const CustomText(
                           text: "Xem tất cả",
@@ -244,7 +250,7 @@ class _PageTwoScreenState extends State<PageTwoScreen> {
                         likes: data['likes'],
                         backgroundColor: data['backgroundColor'],
                         onTap: () {
-                          print("Clicked ${data['title']}");
+                          debugPrint("Clicked ${data['title']}");
                         },
                       ),
                     );

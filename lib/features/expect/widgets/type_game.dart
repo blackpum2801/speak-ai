@@ -43,14 +43,15 @@ class TypeGame extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 8),
-              Container(
+              SizedBox(
                 width: size,
                 child: Text(
                   title,
                   style: const TextStyle(
                     fontSize: 12,
                     fontWeight: FontWeight.bold,
-                    color: Colors.black,
+                    color: Colors.white,
+                    fontFamily: 'OpenSans',
                   ),
                   overflow: TextOverflow.ellipsis,
                   textAlign: TextAlign.center,
