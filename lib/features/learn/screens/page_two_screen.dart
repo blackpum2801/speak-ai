@@ -96,6 +96,7 @@ class _PageTwoScreenState extends State<PageTwoScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: AppColors.background,
       body: SingleChildScrollView(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -153,7 +154,7 @@ class _PageTwoScreenState extends State<PageTwoScreen> {
                 dotsCount: sampleCards.length,
                 position: _currentPage.toDouble(),
                 decorator: const DotsDecorator(
-                  color: Colors.black87, // Inactive color
+                  color: Colors.white, // Inactive color
                   activeColor: Colors.redAccent,
                 ),
               ),
@@ -168,12 +169,14 @@ class _PageTwoScreenState extends State<PageTwoScreen> {
                     text: "Gợi ý cho bạn",
                     fontFamily: 'OpenSans',
                     fontSize: 25,
+                    color: Colors.white,
                     fontWeight: FontWeight.w700,
                   ),
                   const CustomText(
                     text: "Tập trung các kỹ năng này để cải thiện nhanh nhất",
                     fontFamily: 'OpenSans',
                     fontSize: 16,
+                    color: Color.fromARGB(255, 212, 210, 210),
                     fontWeight: FontWeight.w500,
                   ),
                   const SizedBox(height: 10),
@@ -193,6 +196,7 @@ class _PageTwoScreenState extends State<PageTwoScreen> {
                         text: "Học phần đã được tuyển chọn",
                         fontFamily: 'OpenSans',
                         fontSize: 22,
+                        color: Colors.white,
                         fontWeight: FontWeight.w700,
                       ),
                       const Spacer(),
@@ -204,6 +208,7 @@ class _PageTwoScreenState extends State<PageTwoScreen> {
                           text: "Xem tất cả",
                           fontFamily: 'OpenSans',
                           fontSize: 16,
+                          color: Colors.white,
                           fontWeight: FontWeight.w700,
                         ),
                       ),
@@ -214,6 +219,7 @@ class _PageTwoScreenState extends State<PageTwoScreen> {
                         "Học các học phần phổ biến nhất từ cộng đồng Speak Up",
                     fontFamily: 'OpenSans',
                     fontSize: 16,
+                    color: Color.fromARGB(255, 212, 210, 210),
                     fontWeight: FontWeight.w500,
                   ),
                 ],
